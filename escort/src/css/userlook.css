@@ -1,0 +1,19 @@
+.seeprofile{
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 200px;
+}
+.seeprofile img{
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+.userInfo{
+    max-width: 800px;
+    width: 100%;
+    height: max-content;
+    padding: 50px;
+}

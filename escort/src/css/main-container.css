@@ -1,0 +1,39 @@
+.filter-container{
+    display: flex;
+    /* padding: 50px; */
+    /* position: fixed; */
+    height: 200px;
+    margin: auto;
+    padding-top: 50px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.filter-container input{
+    display: block;
+}
+.drop button{
+    height: 30px;
+    width: 180px;
+    border-right: 1px solid black;
+}
+.drop input{
+    width: 180px;
+    font-family: Poppins;
+}
+.apply{
+    height: 30px;
+    width: 90px;
+    background-color: #E5BF00;
+    cursor: pointer;
+}
+.hair-type-checkbox{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.hair-type-checkbox input{
+    width: max-content;
+}

@@ -1,0 +1,45 @@
+.drag{
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+    cursor: pointer;
+    color:white;
+    width: 40px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.addimg{
+    width: 40px;
+    height: 40px;
+}
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

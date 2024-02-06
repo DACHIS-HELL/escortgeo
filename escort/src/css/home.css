@@ -1,0 +1,95 @@
+.search{
+    background-color: #363636;
+    height: 80px;
+    padding-left: 280px;
+    display: flex;
+    align-items: center;
+}
+.search form{
+    position: relative;
+}
+.form1 input{
+    width: 357px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+}
+.srch{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.user{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.user .create{
+    display: flex;
+    align-items: center;
+}
+.user .create a{
+    color: white;
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.u-logo{
+    color: #E5BF00;
+    display: block;
+}
+.login{
+    padding-left: 25px;
+}
+.login input{
+    background-color: #1a1a1a;
+    border: 1px solid grey;
+    width: 108px;
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 25px;
+    color: white;
+}
+.login button{
+    width: 110px;
+    background-color: #E5BF00;
+    border: none;
+    margin-left: 10px;
+    height: 28px;
+    cursor: pointer;
+}
+.menu{
+    background-color: #1F2021;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+.home{
+    position: relative;
+}
+.home .logo{
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    left: 50px;
+}
+.logo h4{
+    color: #E5BF00;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+.routess{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 600px;
+}
+.routess a{
+    text-decoration: none;
+    color: white;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
