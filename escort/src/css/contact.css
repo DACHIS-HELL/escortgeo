@@ -14,7 +14,7 @@
 .contact ul{
     height: 500px;
     width: 500px;
-    background-color: #474e5d;
+    background-color: #474747;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,4 +35,13 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
+}
+.telegram{
+    color: rgb(14, 14, 200);
+}
+.whatsup{
+    color: green;
+}
+.viber{
+    color: purple;
 }

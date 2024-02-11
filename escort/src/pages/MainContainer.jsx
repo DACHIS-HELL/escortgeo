@@ -114,7 +114,7 @@ function MainContainer() {
         </div>
 
         <div className='hair-type-dropdown drop'>
-          <button onClick={() => handleShowDropdown('districts')}>უბაბი</button>
+          <button onClick={() => handleShowDropdown('districts')}>უბნები</button>
           {showDistrictsMenu && (
             <div className="hair-type-checkboxes">
               {districtsOptions.map((option) => (
