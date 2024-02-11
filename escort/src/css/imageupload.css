@@ -1,7 +1,6 @@
 .drag{
     border: 2px dashed #ccc;
     border-radius: 4px;
-    padding: 40px;
     text-align: center;
     cursor: pointer;
     color:white;
@@ -9,6 +8,13 @@
     margin-left: 50px;
     margin-top: 50px;
     margin-bottom: 100px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
 }
 .addimg{
     width: 40px;

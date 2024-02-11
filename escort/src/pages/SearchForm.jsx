@@ -14,9 +14,8 @@ const SearchForm = () => {
       const formData = new FormData();
       formData.append('search', searchQuery);
 
-      // Make a fetch request to the PHP API
       fetch('search.php', {
-        method: 'POST', // or 'GET' depending on your API
+        method: 'POST', 
         body: formData,
       })
         .then(response => response.json())

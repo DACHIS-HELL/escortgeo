@@ -1,11 +1,14 @@
 .filter-container{
     display: flex;
-    /* padding: 50px; */
-    /* position: fixed; */
-    height: 200px;
+    flex-wrap: wrap;
     margin: auto;
     padding-top: 50px;
+    max-height: 700px;
+    height: 100%;
+    padding-bottom: 50px;
+
 }
+
 .main-container{
     display: flex;
     flex-direction: column;
@@ -16,11 +19,15 @@
 }
 .drop button{
     height: 30px;
-    width: 180px;
+    width: 130px;
     border-right: 1px solid black;
 }
+.drop{
+    width: 130px;
+    margin-top: 10px;
+}
 .drop input{
-    width: 180px;
+    width: max-content;
     font-family: Poppins;
 }
 .apply{
@@ -28,12 +35,26 @@
     width: 90px;
     background-color: #E5BF00;
     cursor: pointer;
+    margin-top: 10px;
 }
 .hair-type-checkbox{
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
+    background-color: #D9D9D9;
+    width: 210px;
+    padding: 5px;
 }
-.hair-type-checkbox input{
+.hair-type-checkboxes{
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.hair-type-checkboxes label{
+    text-wrap: nowrap;
     width: max-content;
 }
+

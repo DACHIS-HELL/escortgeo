@@ -18,13 +18,7 @@ const Footer = () => {
             <Link to='/about'>ჩვენს შესახებ</Link>
             </div>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sed assumenda mollitia dolore! Quidem 
-                nesciunt quos repudiandae commodi, deserunt ipsam magni.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Sed assumenda mollitia dolore! Quidem 
-                nesciunt quos repudiandae commodi, deserunt ipsam magni.
-
+            გთხოვთ, ყურადღებით წაიკითხოთ წესები და პირობები ამ ვებსაიტის გამოყენებამდე. ამ პირობებზე დათანხმება ნიშნავს, რომ თქვენ წაიკითხეთ და ეთანხმებით ქვემოთ ჩამოთვლილ წესებს.
             </p>
         </div>
     </div>

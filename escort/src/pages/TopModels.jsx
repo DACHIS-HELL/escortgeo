@@ -1,26 +1,26 @@
-// VipModelsContainer.jsx
 import React, { useState, useEffect } from 'react';
 import '../css/vip-container.css';
 
-function VipModelsContainer({ filters }) {
-  const [vipModels, setVipModels] = useState([]);
+
+function TopModelsContainer({ filters }) {
+  const [topModels, setTopModels] = useState([]);
 
   useEffect(() => {
     fetch(`your-php-api-endpoint/fetch-data?keyword=${filters.keyword}&age=${filters.age}&hair=${filters.hair}&weight=${filters.weight}&height=${filters.height}`)
       .then(response => response.json())
       .then(data => {
-        setVipModels(data);
+        setTopModels(data);
       })
       .catch(error => {
-        console.error('Error fetching VIP models data:', error);
+        console.error('Error fetching top models data:', error);
       });
   }, [filters]); 
 
   return (
     <div className="vip-container">
-      <h1 >VIP მოდელები</h1>
+      <h1>Top მოდელები</h1>
       <ul>
-        {vipModels.map(model => (
+        {topModels.map(model => (
           <li key={model.id}>
             <div className="model-card">
               <img src={model.profilePictureUrl} alt="Profile" />
@@ -33,4 +33,4 @@ function VipModelsContainer({ filters }) {
   );
 }
 
-export default VipModelsContainer;
+export default TopModelsContainer;
