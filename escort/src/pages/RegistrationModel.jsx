@@ -29,8 +29,6 @@ const RegistrationForm = () => {
       ...errors,
       [name]: '',
     });
-
-    // Validate email on input change
     if (name === 'email') {
       validateEmail(value);
     }

@@ -191,31 +191,10 @@ function UpdateProfileForm() {
             onChange={handleInputChange}
           />
           <input
-            placeholder='ლოკაცია'
-            type='text'
-            name='location'
-            value={formData.location}
-            onChange={handleInputChange}
-          />
-          <input
             placeholder='თვალების ფერი'
             type='text'
             name='eyes'
             value={formData.eyes}
-            onChange={handleInputChange}
-          />
-          <input
-            placeholder='თმის ფერი'
-            type='text'
-            name='hairColor'
-            value={formData.hairColor}
-            onChange={handleInputChange}
-          />
-          <input
-            placeholder='წონა'
-            type='text'
-            name='weight'
-            value={formData.weight}
             onChange={handleInputChange}
           />
           <input
@@ -230,13 +209,6 @@ function UpdateProfileForm() {
             type='text'
             name='smoker'
             value={formData.smoker}
-            onChange={handleInputChange}
-          />
-          <input
-            placeholder='სერვისები'
-            type='text'
-            name='services'
-            value={formData.services}
             onChange={handleInputChange}
           />
           <input
@@ -260,6 +232,135 @@ function UpdateProfileForm() {
             value={formData.orientation}
             onChange={handleInputChange}
           />
+           <select
+          name='hair'
+          value={formData.hair}
+          onChange={handleInputChange}
+        >      
+         <option key="0" >თმის ფერი</option>,
+         <option key="1" value="ქერა">ქერა</option>,
+         <option key="2" value="ყავისფერი">ყავისფერი</option>,
+         <option key="3" value="შავი">შავი</option>,
+         <option key="4" value="წითელი">წითელი</option>,
+         <option key="5" value="მუქი წითელი">მუქი წითელი</option>,
+         <option key="6" value="ნაცრისფერი">ნაცრისფერი</option>,
+         <option key="7" value="ვერცხლისფერი">ვერცხლისფერი</option>,
+         <option key="8" value="ოქროსფერი">ოქროსფერი</option>,
+         <option key="9" value="მოკლე">მოკლე</option>,
+         <option key="10" value="საშუალო">საშუალო</option>,
+         <option key="11" value="გრძელი">გრძელი</option>,
+         <option key="12" value="ხვეული">ხვეული</option>,
+         <option key="13" value="სწორი">სწორი</option>,
+         <option key="14" value="ბუნებრივი">ბუნებრივი</option>,
+         <option key="15" value="სხვა">სხვა</option>
+        </select>
+        <select
+          name='weight'
+          value={formData.weight}
+          onChange={handleInputChange}
+        >           
+          <option key="0">წონა</option>,
+          <option key="1" value="ძალიან გამხდარი">ძალიან გამხდარი</option>,
+          <option key="2" value="გამხდარი">გამხდარი</option>,
+          <option key="3" value="სტანდარტული">სტანდარტული</option>,
+          <option key="4" value="სპორტული">სპორტული</option>,
+          <option key="5" value="მსუქანი">მსუქანი</option>,
+        </select>
+        <select
+          name='nationality'
+          value={formData.nationality}
+          onChange={handleInputChange}
+        >  
+          <option key="0">ეროვნება</option>,
+          <option key="1" value="ქართველი">ქართველი</option>,
+          <option key="2" value="რუსი">რუსი</option>,
+          <option key="3" value="შავი">შავი</option>,
+          <option key="4" value="თურქი">თურქი</option>,
+          <option key="5" value="სომეხი">სომეხი</option>,
+          <option key="6" value="აზერბაიჯანელი">აზერბაიჯანელი</option>,
+          <option key="7" value="ყაზახი">ყაზახი</option>,
+          <option key="8" value="ბერძენი">ბერძენი</option>,
+          <option key="9" value="უკრაინელი">უკრაინელი</option>,
+          <option key="10" value="სხვა">სხვა</option>,
+        </select>
+        <select
+          name='location'
+          value={formData.location}
+          onChange={handleInputChange}
+        >
+           <option key="0">მდებარეობა</option>,
+           <option key="1" value="თბილისი">თბილისი</option>,
+           <option key="2" value="ქუთაისი">ქუთაისი</option>,
+           <option key="3" value="ბათუმი">ბათუმი</option>,
+           <option key="4" value="რუსთავი">რუსთავი</option>,
+           <option key="5" value="ზუგდიდი">ზუგდიდი</option>,
+           <option key="6" value="ქვემო ლარისი">ქვემო ლარისი</option>,
+           <option key="7" value="ახმეტა">ახმეტა</option>,
+           <option key="8" value="მცხეთა">მცხეთა</option>,
+           <option key="9" value="ქვემო სამგორი">ქვემო სამგორი</option>,
+           <option key="10" value="გორი">გორი</option>,
+           <option key="11" value="ბორჯომი">ბორჯომი</option>,
+           <option key="12" value="მცხეთა">მცხეთა</option>,
+           <option key="13" value="მარნეული">მარნეული</option>,
+           <option key="14" value="მარტვილი">მარტვილი</option>,
+           <option key="15" value="ლოტერი">ლოტერი</option>,
+           <option key="16" value="ფოთი">ფოთი</option>,
+           <option key="17" value="წყნეთი">წყნეთი</option>,
+           <option key="18" value="სიღნაღი">სიღნაღი</option>,
+           <option key="19" value="ახალციხე">ახალციხე</option>,
+           <option key="20" value="მცხეთა">მცხეთა</option>,
+
+        </select>
+        <select
+  name='location'
+  value={formData.location}
+  onChange={handleInputChange}
+>
+  <option key="0">უბნები</option>
+  <option key="1" value="ღრმაღელე">ღრმაღელე</option>
+  <option key="2" value="დიდი დიღომი">დიდი დიღომი</option>
+  <option key="3" value="ვარკეთილი">ვარკეთილი</option>
+  <option key="4" value="ვაკე">ვაკე</option>
+  <option key="5" value="წერეთელი">წერეთელი</option>
+  <option key="6" value="თემქა">თემქა</option>
+  <option key="7" value="საბურთალო">საბურთალო</option>
+  <option key="8" value="რუსთაველი">რუსთაველი</option>
+  <option key="9" value="მარჯანიშვილი">მარჯანიშვილი</option>
+  <option key="10" value="ისანი">ისანი</option>
+  <option key="11" value="გლდანი">გლდანი</option>
+  <option key="12" value="დიღომი">დიღომი</option>
+  <option key="13" value="დიდუბე">დიდუბე</option>
+  <option key="14" value="ავლაბარი">ავლაბარი</option>
+</select>
+
+        <select
+          name='services'
+          value={formData.services}
+          onChange={handleInputChange}
+        >
+            <option key="0">სერვისები</option>,
+           <option key="1" value="მინეტი ურეზინოდ">მინეტი ურეზინოდ</option>,
+           <option key="2" value="გათავება სახეზე">გათავება სახეზე</option>,
+           <option key="3" value="ღრმა მინეტი">ღრმა მინეტი</option>,
+           <option key="4" value="ანალური სექსი">ანალური სექსი</option>,
+           <option key="5" value="პოზა 69">პოზა 69</option>,
+           <option key="6" value="ეროტიული მასაჟი">ეროტიული მასაჟი</option>,
+           <option key="7" value="ლესბო">ლესბო</option>,
+           <option key="8" value="ფუტ ფეტიში">ფუტ ფეტიში</option>,
+           <option key="9" value="კუნილინგუსი">კუნილინგუსი</option>,
+           <option key="10" value="რიმინგი(ანილინგუსი)">რიმინგი(ანილინგუსი)</option>,
+           <option key="11" value="მინეტი დამცავით">მინეტი დამცავით</option>,
+           <option key="12" value="გათავება პირში">გათავება პირში</option>,
+           <option key="13" value="გათავება სხეულზე">გათავება სხეულზე</option>,
+           <option key="14" value="კოცნა">კოცნა</option>,
+           <option key="15" value="კლასიკური სექსი">კლასიკური სექსი</option>,
+           <option key="16" value="სტრიპ დენსი">სტრიპ დენსი</option>,
+           <option key="17" value="ოქროს წვიმა">ოქროს წვიმა</option>,
+           <option key="18" value="წყვილი">წყვილი</option>,
+           <option key="19" value="ჯგუფური">ჯგუფური</option>,
+           <option key="20" value="სექს სათამაშო">სექს სათამაშო</option>,
+           <option key="21" value="დომინაცია">დომინაცია</option>,
+        </select>
         <button className='butt2' type='submit'>პროფილის განახლება</button>
       </form>
 

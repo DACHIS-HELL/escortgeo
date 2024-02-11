@@ -1,7 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 const Vip = () => {
   return (
+    <>
+    <Header/>
     <div className="vip">
       <h1>VIP - ის შეძენა და ფასები</h1>
        <p>
@@ -17,6 +20,7 @@ const Vip = () => {
        ანკეტის გამოჩენა პირველი ერთი თვე უფასო მომდევნო თვიდან 1 თვიანი პაკეტი 20 ლარი
        </p>
     </div>
+    </>
   )
 }
 

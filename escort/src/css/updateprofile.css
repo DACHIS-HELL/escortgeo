@@ -21,7 +21,14 @@
     margin-bottom: 10px;
     padding: 10px;
     width: 400px;
-    height: 30px;
+    height: 45px;
+}
+.updateprofile form select{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 45px;
+
 }
 .df{
     display: flex;

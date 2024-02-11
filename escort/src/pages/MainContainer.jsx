@@ -235,7 +235,6 @@ function MainContainer() {
             </div>
           )}
         </div>
-
         <button className='apply' onClick={handleApplyFilters}>ფილტრაცია</button>
       </div>
       <TopModelsContainer filters={filters}/>
